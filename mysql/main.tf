@@ -6,20 +6,8 @@
 # in a way that keeps your Terraform code DRY. This is not production-ready code, so use at your own risk.
 # ---------------------------------------------------------------------------------------------------------------------
 
-terraform {
-  # Live modules pin exact Terraform version; generic modules let consumers pin the version.
-  # The latest version of Terragrunt (v0.36.0 and above) recommends Terraform 1.1.4 or above.
 
-  # Live modules pin exact provider version; generic modules let consumers pin the version.
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "= 3.7.0"
-    }
-  }
-}
-
-# ---------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------
 # CREATE THE MYSQL DB
 # ---------------------------------------------------------------------------------------------------------------------
 
